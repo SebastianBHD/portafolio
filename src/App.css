@@ -1,0 +1,41 @@
+.app-container {
+  min-height: 100vh;
+  position: relative;
+  background-image: url('./svg-png/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.app-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 33, 61, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.app-content {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes ascend {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-ascend {
+  animation: ascend 1s ease-out forwards;
+}
+
