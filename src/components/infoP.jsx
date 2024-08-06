@@ -34,7 +34,7 @@ function InfoP({ titulo, descripcion, bool }) {
                         ) : (
                             <div className="space-x-4">
                                 <a href="/path-to-cv" download className="underline hover:text-primary">Curriculum Vitae</a>
-                                <a href="./portafolio/ReporteEscolaridad.pdf" download className="underline hover:text-primary">Scolarship</a>
+                                <a href="/portafolio/ReporteEscolaridad.pdf" download className="underline hover:text-primary">Scolarship</a>
                             </div>
                         )}
                     </div>
