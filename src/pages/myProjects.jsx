@@ -19,7 +19,7 @@ function MyProjects() {
                 <div className="grid grid-cols-1 text-center gap-10 lg:grid-cols-2 p-20 lg:p-10 lg:grid-rows-5 xl:grid-cols-3 xl:grid-rows-3 animate-ascend">
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>QuePinta</h2>
-                        <ProjectCard img="./QuePinta.png" desc={desc1} link="http://webir-peliculas.vercel.app"/>
+                        <ProjectCard img="QuePinta.png" desc={desc1} link="http://webir-peliculas.vercel.app"/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
