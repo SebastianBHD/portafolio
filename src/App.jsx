@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import { BrowserRouter as Route, Routes, Navigate} from 'react-router-dom'
+import { Route, Routes, Navigate} from 'react-router-dom'
 import Header from './components/header.jsx'
 import Home from './pages/home.jsx'
 import AboutMe from './pages/aboutMe.jsx'
 import Contact from './pages/contact.jsx'
 import Footer from './components/footer.jsx'
 import MyProjects from './pages/myProjects.jsx'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,7 @@ function App() {
     <>
       <div className="app-container">
         <div className="app-content">
-          <Header />
+          <Header></Header>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/aboutMe" element={<AboutMe />} />
@@ -31,4 +32,3 @@ function App() {
 }
 
 export default App
-
