@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import {Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Header from './components/header.jsx'
 import Home from './pages/home.jsx'
 import AboutMe from './pages/aboutMe.jsx'
@@ -14,17 +14,18 @@ function App() {
 
   return (
     <>
-
-      <Header></Header>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/aboutMe" element={<AboutMe />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/myProjects" element={<MyProjects />} />
-      </Routes>
-      <Footer />
+      <div className="app-container">
+        <div className="app-content">
+          <Header></Header>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/aboutMe" element={<AboutMe />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/myProjects" element={<MyProjects />} />
+          </Routes>
+          <Footer />
+        </div>
       </div>
-    </div>
     </>
   )
 }
