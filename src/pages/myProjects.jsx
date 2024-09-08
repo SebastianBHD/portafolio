@@ -3,7 +3,7 @@ import ProjectCard from '../components/projectCard';
 function MyProjects() {
 
     const desc1 = "A web page where you can consult any movie or TV show data, with an AI Chatbot that helps you choose the best movie that fits you by considering your favorite actors or genres.";
-
+    const desc2 = "A responsive web page where you can see the menu of a coffee shop, with some products and prices with a contact form to make a reservation. It is static only for practice purposes.";
     return (
         <>
             <div className="container mx-auto w-screen p-4">
