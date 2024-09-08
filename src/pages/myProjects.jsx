@@ -22,8 +22,8 @@ function MyProjects() {
                         <ProjectCard img="./portafolio/QuePinta.png" desc={desc1} link="http://webir-peliculas.vercel.app"/>
                     </div>
                     <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
-                        <ProjectCard />
+                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>CoffeePage</h2>
+                        <ProjectCard img="./portafolio/CoffeePage.png" desc={desc2} link="https://sebastianbhd.github.io/coffeepage/"/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
