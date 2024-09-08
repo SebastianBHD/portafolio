@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 function MyProjects() {
 
     const desc1 = "A web page where you can consult any movie or TV show data, with an AI Chatbot that helps you choose the best movie that fits you by considering your favorite actors or genres.";
-
+    const desc2 = "A responsive web page where you can see the menu of a coffee shop, with some products and prices with a contact form to make a reservation. It is static only for practice purposes.";
     return (
         <>
             <div className='p-12 lg:p-16 justify-center align-middle flex-col'>
@@ -27,8 +27,8 @@ function MyProjects() {
                         <ProjectCard img="./portafolio/QuePinta.png" desc={desc1} link="http://webir-peliculas.vercel.app"/>
                     </div>
                     <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
-                        <ProjectCard />
+                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>CoffeePage</h2>
+                        <ProjectCard img="./portafolio/CoffeePage.png" desc={desc2} link="https://sebastianbhd.github.io/coffeepage/"/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
