@@ -2,7 +2,7 @@
 
 import { Button } from '../components/ui/button';
 
-function ProjectCard({ img = '/projectphoto.jpg', desc = 'Coming Soon', link = 'https://www.youtube.com/watch?v=yqWX86uT5jM' }) {
+function ProjectCard({ img = './projectphoto.jpg', desc = 'Coming Soon', link = 'https://www.youtube.com/watch?v=yqWX86uT5jM' }) {
     return (
         <div className="relative group">
             <div className="flex justify-center items-center ">
