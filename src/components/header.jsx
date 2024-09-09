@@ -9,7 +9,7 @@ function Header() {
 
                 <div className="flex justify-center items-center space-x-5 md:text-xl font-light text-tertiary">
                     <NavLink
-                        to="/"
+                        to="/portafolio"
                         className={({ isActive }) =>
                             isActive
                                 ? "text-primary hover:text-primary underline"

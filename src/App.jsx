@@ -18,11 +18,11 @@ function App() {
         <div className="app-content">
           <Header></Header>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/portafolio" element={<Home />} />
             <Route path="/aboutMe" element={<AboutMe />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/myProjects" element={<MyProjects />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="*" element={<Navigate to="/portafolio" replace />} />
           </Routes>
           <Footer />
         </div>
