@@ -18,9 +18,9 @@ function App() {
           <Header></Header>
           <Routes>
             <Route path="/portafolio" element={<Home />} />
-            <Route path="/portafolio/aboutMe" element={<AboutMe />} />
-            <Route path="/portafolio/contact" element={<Contact />} />
-            <Route path="/portafolio/myProjects" element={<MyProjects />} />
+            <Route path="/aboutMe" element={<AboutMe />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/myProjects" element={<MyProjects />} />
             <Route path="*" element={<Navigate to="/portafolio" replace />} />
           </Routes>
           <Footer />
