@@ -1,8 +1,6 @@
+import { Button } from './ui/button';
 
-
-import { Button } from '../components/ui/button';
-
-function ProjectCard({ img = './projectphoto.jpg', desc = 'Coming Soon', link = 'https://www.youtube.com/watch?v=yqWX86uT5jM' }) {
+function ProjectCard({ img = './projectphoto.jpg', desc = 'Coming Soon', link = 'https://www.youtube.com/watch?v=mCdA4bJAGGk' }) {
     return (
         <div className="relative group">
             <div className="flex justify-center items-center ">
@@ -18,7 +16,7 @@ function ProjectCard({ img = './projectphoto.jpg', desc = 'Coming Soon', link = 
                         <p className="text-white xl:text-md text-sm">
                             {desc}
                         </p>
-                        <a href={link}>
+                        <a href={link} target="_blank">
                             <Button>View More</Button>
                         </a>
                     </div>

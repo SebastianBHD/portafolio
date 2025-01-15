@@ -1,5 +1,5 @@
 import ProjectCard from './projectCard';
-import { Button } from '../components/ui/button'
+import { Button } from './ui/button'
 import { NavLink } from 'react-router-dom';
 
 function MyProjects() {

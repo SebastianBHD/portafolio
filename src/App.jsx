@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <div className="app-container">
-        <div className="app-content">
+        <div className="app-content overflow-x-hidden">
           <Header></Header>
           <Routes>
             <Route path="/portafolio" element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
             <Route path="/myProjects" element={<MyProjects />} />
             <Route path="*" element={<Navigate to="/portafolio" replace />} />
           </Routes>
-          <Footer />
+          <Footer/>
         </div>
       </div>
     </>

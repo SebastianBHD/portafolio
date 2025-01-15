@@ -8,22 +8,22 @@ function MoreInfo() {
                         <div className=" md:p-8 flex flex-col text-start xl:border-r-2 text-tertiary">
                             <h1 className="md:text-5xl pb-4 pt-4 font-poppins text-3xl text-primary">Relevant Subjects</h1>
                             <ul className="list-disc ml-5 space-y-5">
-                                <li className="md:text-3xl text-xl">Programming 1, 2, 3, and 4</li>
+                                <li className="md:text-3xl text-xl">Programming 1, 2, 3, 4</li>
                                 <li className="md:text-3xl text-xl">Database Fundamentals</li>
-                                <li className="md:text-3xl text-xl">Introduction to Software Engineering</li>
+                                <li className="md:text-3xl text-xl">Software Engineering Project</li>
                                 <li className="md:text-3xl text-xl">Programming Workshop</li>
-                                <li className="md:text-3xl text-xl">Language Theory</li>
+                                <li className="md:text-3xl text-xl">Data Integration</li>
+                                <li className="md:text-3xl text-xl">Computer Architecture</li>
+                                <li className="md:text-3xl text-xl">Machine Learning</li>
                             </ul>
                         </div>
                         {/* Section 2 */}
                         <div className=" md:p-8 flex flex-col text-start xl:border-r-2 border-t-2 lg:border-t-0 xl:border-t-0 text-tertiary">
                             <h1 className="md:text-5xl font-poppins text-3xl pb-4 pt-4 text-primary">Current Subjects</h1>
                             <ul className="list-disc ml-5 space-y-5">
-                                <li className="md:text-3xl text-xl">Computer Architecture</li>
-                                <li className="md:text-3xl text-xl">Software Engineering Project</li>
-                                <li className="md:text-3xl text-xl">Machine Learning</li>
-                                <li className="md:text-3xl text-xl">The Business of Software</li>
-                                <li className="md:text-3xl text-xl">Data Integration</li>
+                                <li className="md:text-3xl text-xl">Systems</li>
+                                <li className="md:text-3xl text-xl">Logic Programming</li>
+
                             </ul>
                         </div>
                         {/* Section 3 */}
@@ -42,7 +42,7 @@ function MoreInfo() {
                             <ul className="list-disc ml-5 space-y-5">
                                 <li className="md:text-3xl text-xl"><span className="font-semibold">Frontend:</span> React, Astro, Tailwind CSS, CSS, HTML, JavaScript</li>
                                 <li className="md:text-3xl text-xl"><span className="font-semibold">Backend:</span> Java, Node JS, C++, Express JS</li>
-                                <li className="md:text-3xl text-xl"><span className="font-semibold">Data Science:</span> PostgreSQL</li>
+                                <li className="md:text-3xl text-xl"><span className="font-semibold">Data Science:</span> PostgreSQL, MySQL</li>
                                 <li className="md:text-3xl text-xl"><span className="font-semibold">Other:</span> GitHub, LaTeX, Figma</li>
                             </ul>
                         </div>

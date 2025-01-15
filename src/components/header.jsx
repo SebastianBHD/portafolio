@@ -42,8 +42,8 @@ function Header() {
                         to="/contact"
                         className={({ isActive }) =>
                             isActive
-                                ? "text-primary hover:text-primary underline xl:hidden block"
-                                : "hover:text-primary xl:hidden block"
+                                ? "text-primary hover:text-primary underline lg:hidden block"
+                                : "hover:text-primary lg:hidden block"
                         }
                     >
                         Contact

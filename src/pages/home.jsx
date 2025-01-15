@@ -6,7 +6,7 @@ import '../App.css'; // Asegúrate de que este archivo CSS se importe para aplic
 
 function Home() {
   const title = "Who I Am ?";
-  const desc = "Mi name is Sebastian Britos. I'm 21 years old and I'm a student at the Faculty of Engineering of the University of the Republic. I have more than 250 credits approved and more than 22 subjects taken. I have worked on multiple group projects where I have acquired diverse knowledge and learned how to work as a team.";
+  const desc = "Mi name is Sebastian Britos. I'm 21 years old and I'm a student of systems engineering at the University of the Republic. I have more than 300 credits approved and almost 30 subjects taken. I have worked on multiple group projects where I have acquired diverse knowledge and learned how to work as a team.";
   return (
     <>
       <div className="grid md:p-10 p-5 gap-y-5 md:mb-36 mb-20">
