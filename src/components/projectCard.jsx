@@ -1,6 +1,7 @@
 import { Button } from './ui/button';
+import proj from '../svg-png/projectphoto.jpg';
 
-function ProjectCard({ img = './projectphoto.jpg', desc = 'Coming Soon', link = 'https://www.youtube.com/watch?v=mCdA4bJAGGk' }) {
+function ProjectCard({ img = { proj }, desc = 'Coming Soon', link = 'https://www.youtube.com/watch?v=mCdA4bJAGGk' }) {
     return (
         <div className="relative group">
             <div className="flex justify-center items-center ">

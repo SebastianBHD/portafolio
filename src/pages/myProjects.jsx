@@ -1,4 +1,7 @@
 import ProjectCard from '../components/projectCard';
+import proj1 from '../svg-png/QuePinta.png';
+import proj2 from '../svg-png/CoffeePage.png';
+import proj from '../svg-png/projectphoto.jpg';
 
 function MyProjects() {
 
@@ -19,39 +22,39 @@ function MyProjects() {
                 <div className="grid grid-cols-1 text-center gap-10 lg:grid-cols-2 p-20 lg:p-10 lg:grid-rows-5 xl:grid-cols-3 xl:grid-rows-3 animate-ascend">
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>QuePinta</h2>
-                        <ProjectCard img="./portafolio/QuePinta.png" desc={desc1} link="http://webir-peliculas.vercel.app"/>
+                        <ProjectCard img={proj1} desc={desc1} link="http://webir-peliculas.vercel.app"/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>CoffeePage</h2>
-                        <ProjectCard img="./portafolio/CoffeePage.png" desc={desc2} link="https://sebastianbhd.github.io/coffeepage/"/>
+                        <ProjectCard img={proj2} desc={desc2} link="https://sebastianbhd.github.io/coffeepage/"/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
-                        <ProjectCard />
+                        <ProjectCard img={proj}/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
-                        <ProjectCard />
+                        <ProjectCard img={proj}/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
-                        <ProjectCard />
+                        <ProjectCard img={proj}/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
-                        <ProjectCard />
+                        <ProjectCard img={proj}/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
-                        <ProjectCard />
+                        <ProjectCard img={proj}/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
-                        <ProjectCard />
+                        <ProjectCard img={proj}/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
-                        <ProjectCard />
+                        <ProjectCard img={proj}/>
                     </div>
                 </div>
             </div>

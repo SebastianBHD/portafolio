@@ -1,6 +1,9 @@
 import ProjectCard from './projectCard';
 import { Button } from './ui/button'
 import { NavLink } from 'react-router-dom';
+import proj1 from '../svg-png/QuePinta.png';
+import proj2 from '../svg-png/CoffeePage.png';
+import proj from '../svg-png/projectphoto.jpg';
 
 function MyProjects() {
 
@@ -24,15 +27,15 @@ function MyProjects() {
                 <div className="grid lg:flex lg:flex-row gap-10 md:p-20 p-10 justify-center items-center text-center">
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>QuePinta</h2>
-                        <ProjectCard img="./QuePinta.png" desc={desc1} link="http://webir-peliculas.vercel.app"/>
+                        <ProjectCard img={proj1} desc={desc1} link="http://webir-peliculas.vercel.app"/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>CoffeePage</h2>
-                        <ProjectCard img="./CoffeePage.png" desc={desc2} link="https://sebastianbhd.github.io/coffeepage/"/>
+                        <ProjectCard img={proj2} desc={desc2} link="https://sebastianbhd.github.io/coffeepage/"/>
                     </div>
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
-                        <ProjectCard/>
+                        <ProjectCard img={proj}/>
                     </div>
                 </div>
                 <div className='flex justify-center'>
