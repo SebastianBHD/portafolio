@@ -33,7 +33,7 @@ function InfoP({ titulo, descripcion, bool }) {
                             </NavLink>
                         ) : (
                             <div className="space-x-4">
-                                <a href="/path-to-cv" download className="underline hover:text-primary">Curriculum Vitae</a>
+                                <a href="/portafolio/cv.pdf" download className="underline hover:text-primary">Curriculum Vitae</a>
                                 <a href="/portafolio/ReporteEscolaridad.pdf" download className="underline hover:text-primary">Scolarship</a>
                             </div>
                         )}
