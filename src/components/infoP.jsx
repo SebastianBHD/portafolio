@@ -1,8 +1,10 @@
 import yo from '../svg-png/yo.jpg';
-import { Button } from './ui/button';
+import { Button } from './ui/button'
 import { NavLink } from 'react-router-dom';
 
+
 function InfoP({ titulo, descripcion, bool }) {
+
     return (
         <>
             <div className="grid lg:p-10 min-w-full bg-primary p-5 -mt-5">
@@ -30,13 +32,9 @@ function InfoP({ titulo, descripcion, bool }) {
                                 </div>
                             </NavLink>
                         ) : (
-                            <div className="space-x-4">
-                                <a href="/portafolio/cv.pdf" target="_blank" className="hover:underline bg-black p-2 bg-opacity-50 rounded-xl relative group">
-                                    <span>Curriculum Vitae</span>
-                                </a>
-                                <a href="/portafolio/ReporteEscolaridad.pdf" target="_blank" className="hover:underline bg-black p-2 bg-opacity-50 rounded-xl relative group">
-                                    <span>Scolarship</span>
-                                </a>
+                            <div className="space-x-4 ">
+                                <a href="/portafolio/cv.pdf" download className="hover:underline bg-black p-2 bg-opacity-50 rounded-xl">Curriculum Vitae</a>
+                                <a href="/portafolio/ReporteEscolaridad.pdf" download className="hover:underline bg-black p-2 bg-opacity-50 rounded-xl">Scolarship</a>
                             </div>
                         )}
                     </div>
