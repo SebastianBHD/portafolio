@@ -1,10 +1,8 @@
 import yo from '../svg-png/yo.jpg';
-import { Button } from './ui/button'
+import { Button } from './ui/button';
 import { NavLink } from 'react-router-dom';
 
-
 function InfoP({ titulo, descripcion, bool }) {
-
     return (
         <>
             <div className="grid lg:p-10 min-w-full bg-primary p-5 -mt-5">
@@ -21,7 +19,7 @@ function InfoP({ titulo, descripcion, bool }) {
                     <div className="flex justify-center pb-5 lg:block">
                         <img className="object-cover border-secondary lg:[min-width:350px] lg:[min-height:500px] [width:200px] [height:250px] shadow-xl" src={yo} alt="Developer" />
                     </div>
-                    <div className="grid gap-5 border-2 shadow-xl border-secondary rounded-md text-tertiary bg-secondary lg:p-10 p-5 lg:text-4xl md:text-2xl font-poppins font-light mt-4 md:mt-0 md:ml-4">
+                    <div className="grid gap-8 border-2 shadow-xl border-secondary rounded-md text-tertiary bg-secondary lg:p-10 p-5 lg:text-4xl md:text-2xl font-poppins font-light mt-4 md:mt-0 md:ml-4">
                         <p>
                             {descripcion}
                         </p>
@@ -33,8 +31,12 @@ function InfoP({ titulo, descripcion, bool }) {
                             </NavLink>
                         ) : (
                             <div className="space-x-4">
-                                <a href="/portafolio/cv.pdf" download className="underline hover:text-primary">Curriculum Vitae</a>
-                                <a href="/portafolio/ReporteEscolaridad.pdf" download className="underline hover:text-primary">Scolarship</a>
+                                <a href="/portafolio/cv.pdf" target="_blank" className="hover:underline bg-black p-2 bg-opacity-50 rounded-xl relative group">
+                                    <span>Curriculum Vitae</span>
+                                </a>
+                                <a href="/portafolio/ReporteEscolaridad.pdf" target="_blank" className="hover:underline bg-black p-2 bg-opacity-50 rounded-xl relative group">
+                                    <span>Scolarship</span>
+                                </a>
                             </div>
                         )}
                     </div>

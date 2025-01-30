@@ -24,7 +24,7 @@ function MyProjects() {
                         <i>These are some of the projects I have worked on</i>
                     </p>
                 </div>
-                <div className="grid lg:flex lg:flex-row gap-10 md:p-20 p-10 justify-center items-center text-center">
+                <div className="grid lg:flex lg:flex-row gap-10 gap-y-24 md:p-20 p-10 justify-center items-center text-center">
                     <div>
                         <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>QuePinta</h2>
                         <ProjectCard img={proj1} desc={desc1} link="http://webir-peliculas.vercel.app"/>
