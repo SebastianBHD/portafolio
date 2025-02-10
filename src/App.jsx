@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const opacityValue = scrollPosition > 50 ? 0.7 : 0;
+      const opacityValue = scrollPosition > 50 ? 1 : 0;
       setOpacity(opacityValue);
     };
 

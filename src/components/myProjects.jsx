@@ -11,7 +11,7 @@ function MyProjects() {
     const desc2 = "A responsive web page where you can see the menu of a coffee shop, with some products and prices with a contact form to make a reservation. It is static only for practice purposes.";
     return (
         <>
-            <div className='p-12 lg:p-16 justify-center align-middle flex-col'>
+            <div className='flex-col p-12 lg:p-16 justify-between gap-10'>
                 <div className="flex items-center p-2 justify-center">
                     <div className="flex-grow border-t border-tertiary"></div>
                     <h1 className="mx-4 md:text-6xl text-3xl font-poppins text-center text-tertiary whitespace-normal break-words">
@@ -25,18 +25,9 @@ function MyProjects() {
                     </p>
                 </div>
                 <div className="grid lg:flex lg:flex-row gap-10 gap-y-24 md:p-20 p-10 justify-center items-center text-center">
-                    <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>QuePinta</h2>
-                        <ProjectCard img={proj1} desc={desc1} link="http://webir-peliculas.vercel.app"/>
-                    </div>
-                    <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>CoffeePage</h2>
-                        <ProjectCard img={proj2} desc={desc2} link="https://sebastianbhd.github.io/coffeepage/"/>
-                    </div>
-                    <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
+                        <ProjectCard img={proj1} desc={desc1} link="http://webir-peliculas.vercel.app" projectTitle='QuePinta'/>
+                        <ProjectCard img={proj2} desc={desc2} link="https://sebastianbhd.github.io/coffeepage/" projectTitle='CoffeePage'/>
                         <ProjectCard img={proj}/>
-                    </div>
                 </div>
                 <div className='flex justify-center'>
                     <NavLink to='/myProjects' className='text-primary hover:text-primary underline'>

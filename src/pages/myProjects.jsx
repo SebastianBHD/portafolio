@@ -19,41 +19,32 @@ function MyProjects() {
                         <div className="flex-grow border-t border-tertiary"></div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 text-center gap-10  lg:grid-cols-2 p-20 lg:p-10 lg:grid-rows-5 xl:grid-cols-3 xl:grid-rows-3 animate-ascend">
-                    <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>QuePinta</h2>
-                        <ProjectCard img={proj1} desc={desc1} link="http://webir-peliculas.vercel.app"/>
+                <div className="grid grid-cols-1 text-center gap-y-40 gap-x-4 justify-center items-center lg:grid-cols-2 sm:p-20 p-10 lg:p-10 lg:grid-rows-5 xl:grid-cols-3 xl:grid-rows-3 animate-ascend">
+                    <div className='flex justify-center'>
+                        <ProjectCard img={proj1} desc={desc1} link="http://webir-peliculas.vercel.app" projectTitle='QuePinta'/>
                     </div>
-                    <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>CoffeePage</h2>
-                        <ProjectCard img={proj2} desc={desc2} link="https://sebastianbhd.github.io/coffeepage/"/>
+                    <div className='flex justify-center'>
+                        <ProjectCard img={proj2} desc={desc2} link="https://sebastianbhd.github.io/coffeepage/" projectTitle='CoffeePage'/>
                     </div>
-                    <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
+                    <div className='flex justify-center'>
                         <ProjectCard img={proj}/>
                     </div>
-                    <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
+                    <div className='flex justify-center'>
                         <ProjectCard img={proj}/>
                     </div>
-                    <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
+                    <div className='flex justify-center'>
                         <ProjectCard img={proj}/>
                     </div>
-                    <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
+                    <div className='flex justify-center'>
                         <ProjectCard img={proj}/>
                     </div>
-                    <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
+                    <div className='flex justify-center'>
                         <ProjectCard img={proj}/>
                     </div>
-                    <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
+                    <div className='flex justify-center'>
                         <ProjectCard img={proj}/>
                     </div>
-                    <div>
-                        <h2 className='text-xl xl:text-3xl lg:text-3xl font-poppins pb-2 text-tertiary'>Coming Soon</h2>
+                    <div className='flex justify-center'>
                         <ProjectCard img={proj}/>
                     </div>
                 </div>

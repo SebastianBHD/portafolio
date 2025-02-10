@@ -17,26 +17,32 @@ function InfoP({ titulo, descripcion, bool }) {
                         <div className="flex-grow border-t border-tertiary"></div>
                     </div>
                 </div>
-                <div className="relative bg-primary p-5 lg:p-20 flex lg:gap-x-20 flex-col xl:flex-row justify-center lg:justify-start items-center animate-ascend">
-                    <div className="flex justify-center pb-5 lg:block">
-                        <img className="object-cover border-secondary lg:[min-width:350px] lg:[min-height:500px] [width:200px] [height:250px] shadow-xl" src={yo} alt="Developer" />
-                    </div>
-                    <div className="grid gap-8 border-2 shadow-xl border-secondary rounded-md text-tertiary bg-secondary lg:p-10 p-5 lg:text-4xl md:text-2xl font-poppins font-light mt-4 md:mt-0 md:ml-4">
+                <div className="relative p-5 lg:p-20 flex flex-col xl:flex-row justify-center lg:justify-start items-center animate-ascend">
+                    <div className="xl:flex shadow-xl border rounded-md text-tertiary bg-secondary bg-opacity-80 lg:p-10 p-5 lg:text-4xl md:text-2xl font-poppins font-light mt-4 md:mt-0 md:ml-4">
+                        <div className="flex justify-center pb-5 items-center">
+                            <img className="object-cover rounded-lg bg-opacity-50 lg:[min-width:350px] lg:[min-height:500px] [width:200px] [height:250px] shadow-xl" src={yo} alt="Developer" />
+                        </div>
+                        <div className='grid lg:p-12 gap-10'>
                         <p>
                             {descripcion}
                         </p>
                         {bool ? (
                             <NavLink to="/aboutMe">
                                 <div>
-                                    <Button className="lg:w-36 lg:h-12 lg:text-lg">View More</Button>
+                                    <Button className="lg:w-60 lg:h-16 lg:text-2xl">View More</Button>
                                 </div>
                             </NavLink>
                         ) : (
-                            <div className="space-x-4 ">
-                                <a href="/portafolio/cv.pdf" download className="hover:underline bg-black p-2 bg-opacity-50 rounded-xl">Curriculum Vitae</a>
-                                <a href="/portafolio/ReporteEscolaridad.pdf" download className="hover:underline bg-black p-2 bg-opacity-50 rounded-xl">Scolarship</a>
+                            <div className="space-x-4 flex justify-start">
+                                <a href="/portafolio/cv.pdf" download >
+                                <Button className="lg:w-auto lg:h-16 lg:text-2xl" size="sm" type="submit">Curriculum Vitae</Button>
+                                </a>
+                                <a href="/portafolio/ReporteEscolaridad.pdf" download>
+                                <Button className="lg:w-auto lg:h-16 lg:text-2xl" size="sm" type="submit">Scolarship</Button>
+                                </a>
                             </div>
                         )}
+                        </div>
                     </div>
                 </div>
             </div>

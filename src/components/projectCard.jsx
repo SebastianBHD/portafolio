@@ -1,27 +1,18 @@
 import { Button } from './ui/button';
 import proj from '../svg-png/projectphoto.jpg';
 
-function ProjectCard({ img = { proj }, desc = 'Coming Soon', link = 'https://www.youtube.com/watch?v=mCdA4bJAGGk' }) {
+function ProjectCard({ img = { proj }, desc = 'Coming Soon', link = 'https://www.youtube.com/watch?v=mCdA4bJAGGk', projectTitle = '' }) {
     return (
-        <div className="relative group">
-            <div className="flex justify-center items-center ">
-                <div className="relative text-center rounded-md lg:transition-transform lg:duration-500 lg:ease-in-outlg:transform lg:group-hover:scale-105 hover:border-[1px]">
-                    <div className='overflow-hidden lg:[width:300px] lg:[height:250px] xl:[width:400px] xl:[height:280px] md:[width:400px] md:[height:280px] sm:[width:400px] sm:[height:280px] [width:250px] [height:300px]'>
-                        <img
-                            className="object-cover h-full w-full hover:border-none rounded-md blur-sm"
-                            src={img}
-                            alt="Developer"
-                        />
-                    </div>
-                    <div className="absolute inset-0 grid xl:p-10 p-5 justify-center hover:border-none rounded-md bg-secondary bg-opacity-80 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
-                        <p className="text-white xl:text-md text-sm hover:cursor-default">
-                            {desc}
-                        </p>
-                        <a href={link} target="_blank">
-                            <Button>View More</Button>
-                        </a>
-                    </div>
-                </div>
+        <div className='flex flex-col max-w-96 min-w-80 h-full border-[1px] border-primary rounded-lg shadow-lg'>
+            <div className='flex flex-col justify-center'>
+                <img className='w-full h-56 object-cover rounded-t-lg' src={img} />
+            </div>
+            <div className='flex flex-col justify-center items-center md:text-xl min-w-full min-h-72 font-light text-start text-tertiary p-4 gap-y-4 bg-secondary rounded-b-lg'>
+                <h3 className='flex text-2xl font-bold justify-start text-start w-full'>{projectTitle}</h3>
+                <p className='flex'>{desc}</p>
+                <a href={link} target='_blank' rel='noreferrer'>
+                    <Button>View Project</Button>
+                </a>
             </div>
         </div>
     );
