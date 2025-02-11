@@ -1,15 +1,22 @@
-import programingImage from '../svg-png/undraw_code_thinking_re_gka2.svg';
+import programingImage from '../svg-png/fondocambio-Photoroom.png';
 import InfoP from '../components/infoP';
 import MyProjects from '../components/myProjects';
-import '../App.css'; // Asegúrate de que este archivo CSS se importe para aplicar la animación
-
+import '../App.css';
 
 function Home() {
   const title = "Who I Am ?";
-  const desc = "Mi name is Sebastian Britos. I'm 21 years old and I'm a student of systems engineering at the University of the Republic. I have more than 300 credits approved and almost 30 subjects taken. I have worked on multiple group projects where I have acquired diverse knowledge and learned how to work as a team.";
+  const desc = (
+    <>
+      My name is <span className="text-primary">Sebastian Britos</span>. I'm 21 years old and I'm a student of
+      <span className="text-primary"> Systems Engineering</span> at the University of the Republic. I have more than
+      <span className=" text-primary"> 300 credits</span> approved and almost
+      <span className="text-primary"> 30 subjects</span> taken. I have worked on multiple group projects where I have acquired diverse knowledge and learned how to work as a team.
+    </>
+  );
+
   return (
     <>
-      <div className="grid md:p-10 p-5 gap-y-5 md:mb-36 mb-20">
+      <div className="grid md:p-10 p-5 gap-y-5 md:mb-14 mb-10">
         <h1 className="md:text-6xl text-3xl font-poppins p-2 text-center text-tertiary whitespace-normal break-words animate-ascend">
           Hi, I am a <span className="font-bold text-primary">Systems Engineering</span> student
         </h1>
@@ -17,8 +24,8 @@ function Home() {
           I like programming, learning new things and working in team
         </p>
       </div>
-      <div className="flex justify-center items-end">
-        <img className="md:w-1/2 w-3/4 p-5" src={programingImage} alt="Developer" />
+      <div className="flex justify-center items-end ">
+          <img className="xl:w-1/4 sm:w-1/3 w-3/4 p-5 z-10" src={programingImage} alt="Developer" />
       </div>
       <div>
         <InfoP titulo={title} descripcion={desc} bool={true} />

@@ -22,7 +22,7 @@ module.exports = {
           'secondary' : '#000000',
           'tertiary' : '#EFF6E0',
           'quaternary' : '#ffffff',
-          'quinary' : '#000000'
+          'quinary' : '#202020'
       },
       fontFamily: {
         'merriweather': ['Merriweather', 'serif'],
