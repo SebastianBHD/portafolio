@@ -1,7 +1,4 @@
 import ProjectCard from '../components/projectCard';
-import proj1 from '../svg-png/QuePinta.png';
-import proj2 from '../svg-png/CoffeePage.png';
-import proj from '../svg-png/projectphoto.jpg';
 
 function MyProjects() {
 
@@ -21,31 +18,31 @@ function MyProjects() {
                 </div>
                 <div className="grid grid-cols-1 text-center gap-y-40 gap-x-4 justify-center items-center lg:grid-cols-2 sm:p-20 p-10 lg:p-10 lg:grid-rows-5 xl:grid-cols-3 xl:grid-rows-3 animate-ascend">
                     <div className='flex justify-center'>
-                        <ProjectCard img={proj1} desc={desc1} link="http://webir-peliculas.vercel.app" projectTitle='QuePinta'/>
+                        <ProjectCard img="/images/QuePinta.png" desc={desc1} link="http://webir-peliculas.vercel.app" projectTitle='QuePinta'/>
                     </div>
                     <div className='flex justify-center'>
-                        <ProjectCard img={proj2} desc={desc2} link="https://sebastianbhd.github.io/coffeepage/" projectTitle='CoffeePage'/>
+                        <ProjectCard img="/images/CoffeePage.png" desc={desc2} link="https://sebastianbhd.github.io/coffeepage/" projectTitle='CoffeePage'/>
                     </div>
                     <div className='flex justify-center'>
-                        <ProjectCard img={proj}/>
+                        <ProjectCard />
                     </div>
                     <div className='flex justify-center'>
-                        <ProjectCard img={proj}/>
+                        <ProjectCard />
                     </div>
                     <div className='flex justify-center'>
-                        <ProjectCard img={proj}/>
+                        <ProjectCard />
                     </div>
                     <div className='flex justify-center'>
-                        <ProjectCard img={proj}/>
+                        <ProjectCard />
                     </div>
                     <div className='flex justify-center'>
-                        <ProjectCard img={proj}/>
+                        <ProjectCard />
                     </div>
                     <div className='flex justify-center'>
-                        <ProjectCard img={proj}/>
+                        <ProjectCard />
                     </div>
                     <div className='flex justify-center'>
-                        <ProjectCard img={proj}/>
+                        <ProjectCard />
                     </div>
                 </div>
             </div>

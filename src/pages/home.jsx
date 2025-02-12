@@ -1,4 +1,3 @@
-import programingImage from '../svg-png/fondocambio-Photoroom.png';
 import InfoP from '../components/infoP';
 import MyProjects from '../components/myProjects';
 import '../App.css';
@@ -26,7 +25,7 @@ function Home() {
         </p>
       </div>
       <div className="flex justify-center items-end">
-          <img className="xl:w-1/3 sm:w-1/2 w-5/6 p-5 z-10 " src={programingImage} alt="Developer" />
+          <img className="xl:w-1/3 sm:w-1/2 w-5/6 p-5 z-10 " src="/images/fondocambio-Photoroom.png" alt="Developer" />
       </div>
       </div>
       <div>

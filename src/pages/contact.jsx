@@ -1,5 +1,4 @@
 import EmailSection from '../components/emailSection'
-import emailPhoto from '../svg-png/undraw_envelope_hem0.svg';
 
 function Contact() {
     return (
@@ -13,7 +12,7 @@ function Contact() {
                     <div className="flex-grow border-t border-tertiary"></div>
                 </div>
                 <div className="flex justify-center items-end -0">
-                    <img className="md:w-1/2 w-3/4 p-5" src={emailPhoto} alt="Developer" />
+                    <img className="md:w-1/2 w-3/4 p-5" src="/svgs/undraw_envelope_hem0.svg" alt="Developer" />
                 </div>
                 <div className="basis-1/3 flex justify-center items-center space-x-5 md:text-xl min-w-full font-light p-4 bg-primary bg-opacity-60 rounded-md mb-12">
                     <EmailSection />

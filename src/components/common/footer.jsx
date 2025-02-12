@@ -1,5 +1,5 @@
 import AnimatedBg from './animatedBg';
-import EmailSection from './emailSection';
+import EmailSection from '../emailSection';
 
 function Footer() {
     return (

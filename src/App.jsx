@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
-import Header from './components/header.jsx';
+import Header from './components/common/header.jsx';
 import Home from './pages/home.jsx';
 import AboutMe from './pages/aboutMe.jsx';
 import Contact from './pages/contact.jsx';
-import Footer from './components/footer.jsx';
+import Footer from './components/common/footer.jsx';
 import MyProjects from './pages/myProjects.jsx';
 
 function App() {

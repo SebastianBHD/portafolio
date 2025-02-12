@@ -1,9 +1,6 @@
 import ProjectCard from './projectCard';
 import { Button } from './ui/button'
 import { NavLink } from 'react-router-dom';
-import proj1 from '../svg-png/QuePinta.png';
-import proj2 from '../svg-png/CoffeePage.png';
-import proj from '../svg-png/projectphoto.jpg';
 
 function MyProjects() {
 
@@ -25,9 +22,9 @@ function MyProjects() {
                     </p>
                 </div>
                 <div className="grid lg:flex lg:flex-row gap-10 gap-y-24 md:p-20 p-10 justify-center items-center text-center">
-                        <ProjectCard img={proj1} desc={desc1} link="http://webir-peliculas.vercel.app" projectTitle='QuePinta'/>
-                        <ProjectCard img={proj2} desc={desc2} link="https://sebastianbhd.github.io/coffeepage/" projectTitle='CoffeePage'/>
-                        <ProjectCard img={proj}/>
+                        <ProjectCard img="/images/QuePinta.png" desc={desc1} link="http://webir-peliculas.vercel.app" projectTitle='QuePinta'/>
+                        <ProjectCard img="/images/CoffeePage.png" desc={desc2} link="https://sebastianbhd.github.io/coffeepage/" projectTitle='CoffeePage'/>
+                        <ProjectCard/>
                 </div>
                 <div className='flex justify-center'>
                     <NavLink to='/myProjects' className='text-primary hover:text-primary underline'>
