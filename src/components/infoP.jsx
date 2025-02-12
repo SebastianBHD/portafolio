@@ -34,10 +34,10 @@ function InfoP({ titulo, descripcion, bool }) {
                                 </NavLink>
                             ) : (
                                 <div className="space-x-4 flex justify-start">
-                                    <a href="/portafolio/cv.pdf" download >
+                                    <a href="/cv.pdf" download >
                                         <Button className="lg:w-auto lg:h-16 lg:text-2xl" size="sm" type="submit">Curriculum Vitae</Button>
                                     </a>
-                                    <a href="/portafolio/ReporteEscolaridad.pdf" download>
+                                    <a href="/ReporteEscolaridad.pdf" download>
                                         <Button className="lg:w-auto lg:h-16 lg:text-2xl" size="sm" type="submit">Scolarship</Button>
                                     </a>
                                 </div>

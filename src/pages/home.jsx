@@ -16,16 +16,18 @@ function Home() {
 
   return (
     <>
-      <div className="grid md:p-10 p-5 gap-y-5 md:mb-14 mb-10">
-        <h1 className="md:text-6xl text-3xl  p-2 text-center text-tertiary whitespace-normal break-words animate-ascend">
+      <div className='image-container grid h-screen'>
+      <div className="grid text-center justify-center items-center p-4 sm:gap-y-8">
+        <h1 className="sm:text-6xl text-4xl text-center text-tertiary whitespace-normal break-words animate-ascend">
           Hi, I am a <span className="font-bold text-primary">Systems Engineering</span> student
         </h1>
-        <p className="md:text-3xl text-lg  font-light text-center text-tertiary whitespace-normal break-words animate-ascend">
+        <p className="sm:text-3xl text-2xl font-light text-center text-tertiary whitespace-normal break-words animate-ascend">
           I like programming, learning new things and working in team
         </p>
       </div>
-      <div className="flex justify-center items-end ">
-          <img className="xl:w-1/4 sm:w-1/3 w-3/4 p-5 z-10 opacity-90" src={programingImage} alt="Developer" />
+      <div className="flex justify-center items-end">
+          <img className="xl:w-1/3 sm:w-1/2 w-5/6 p-5 z-10 " src={programingImage} alt="Developer" />
+      </div>
       </div>
       <div>
         <InfoP titulo={title} descripcion={desc} bool={true} />

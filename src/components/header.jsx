@@ -5,9 +5,8 @@ import { NavLink } from 'react-router-dom';
 function Header() {
     return (
         <>
-            <div className="w-full md:p-5 p-2 flex justify-center">
-
-                <div className="flex justify-center items-center space-x-5 md:text-xl font-light text-tertiary">
+            <div className="flex justify-center items-center p-4 sm:p-8">
+                <div className="flex justify-between space-x-5 md:text-xl font-light text-tertiary">
                     <NavLink
                         to="/portafolio"
                         className={({ isActive }) =>

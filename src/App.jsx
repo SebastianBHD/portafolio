@@ -10,7 +10,7 @@ import MyProjects from './pages/myProjects.jsx';
 
 function App() {
   const [opacity, setOpacity] = useState(0);
-  const location = useLocation(); 
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,14 +30,9 @@ function App() {
   return (
     <>
       <div className="app-container">
-        <div className="app-content overflow-x-hidden">
-          <div
-            className={`fixed top-0 left-0 w-full z-50 transition-opacity duration-500`}
-            style={{ backgroundColor: `rgba(0, 0, 0, ${opacity})` }}
-          >
+        <div className="app-content items-center justify-center w-full">
             <Header />
-          </div>
-          <div className="pt-[64px]">
+          <div>
             <Routes>
               <Route path="/portafolio" element={<Home />} />
               <Route path="/aboutMe" element={<AboutMe />} />
@@ -45,8 +40,8 @@ function App() {
               <Route path="/myProjects" element={<MyProjects />} />
               <Route path="*" element={<Navigate to="/portafolio" replace />} />
             </Routes>
-            <Footer />
           </div>
+          <Footer />
         </div>
       </div>
     </>
@@ -54,3 +49,4 @@ function App() {
 }
 
 export default App;
+
