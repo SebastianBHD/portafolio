@@ -2,7 +2,7 @@ import InfoP from '../components/infoP';
 import MyProjects from '../components/myProjects';
 import '../App.css';
 
-function Home() {
+function Home({ primaryColor }) {
   const title = "Who I Am ?";
   const desc = (
     <>
@@ -13,22 +13,32 @@ function Home() {
     </>
   );
 
+  // Mapeo de colores a imágenes
+  const colorToImageMap = {
+    '#9f86c0': '/images/fondocambio-Photoroom-violet.png',
+    '#ff8f33': '/images/fondocambio-Photoroom-orange.png',
+    '#4caf50': '/images/fondocambio-Photoroom-green.png',
+  };
+
+  // Obtener la ruta de la imagen según el color seleccionado
+  const imageSrc = colorToImageMap[primaryColor] || '/images/fondocambio-Photoroom-violet.png'; // Valor por defecto
+
   return (
     <>
       <div className='image-container grid h-screen'>
-      <div className="grid text-center justify-center items-center p-4 sm:gap-y-8">
-        <h1 className="sm:text-6xl text-4xl text-center text-tertiary whitespace-normal break-words animate-ascend">
-          Hi, I am a <span className="font-bold text-primary">Systems Engineering</span> student
-        </h1>
-        <p className="sm:text-3xl text-2xl font-light text-center text-tertiary whitespace-normal break-words animate-ascend">
-          I like programming, learning new things and working in team
-        </p>
+        <div className="grid text-center justify-center items-center p-4 sm:gap-y-8">
+          <h1 className="sm:text-6xl text-4xl text-center text-tertiary whitespace-normal break-words animate-ascend">
+            Hi, I am a <span className="font-bold text-primary">Systems Engineering</span> student
+          </h1>
+          <p className="sm:text-3xl text-2xl font-light text-center text-tertiary whitespace-normal break-words animate-ascend">
+            I like programming, learning new things and working in team
+          </p>
+        </div>
+        <div className="flex justify-center items-end">
+          <img className="xl:w-1/3 sm:w-1/2 w-5/6 p-5 z-10" src={imageSrc} alt="Developer" />
+        </div>
       </div>
-      <div className="flex justify-center items-end">
-          <img className="xl:w-1/3 sm:w-1/2 w-5/6 p-5 z-10 " src="/images/fondocambio-Photoroom.png" alt="Developer" />
-      </div>
-      </div>
-      <div>
+      <div className='relative z-20'>
         <InfoP titulo={title} descripcion={desc} bool={true} />
         <MyProjects />
       </div>

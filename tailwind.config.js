@@ -17,12 +17,12 @@ module.exports = {
       },
     },
     extend: {
-      colors : {
-          'primary' : '#9f86c0',
-          'secondary' : '#000000',
-          'tertiary' : '#EFF6E0',
-          'quaternary' : '#ffffff',
-          'quinary' : '#202020'
+      colors: {
+        primary: 'var(--primary-color)',
+        secondary: '#000000',
+        tertiary: '#EFF6E0',
+        quaternary: '#ffffff',
+        quinary: '#202020'
       },
       fontFamily: {
         'merriweather': ['Merriweather', 'serif'],
@@ -48,7 +48,7 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "ascend" : 'ascend 1s ease-out',
+        "ascend": 'ascend 1s ease-out',
       },
     },
   },

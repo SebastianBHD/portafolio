@@ -1,10 +1,10 @@
 import AnimatedBg from './animatedBg';
 import EmailSection from '../emailSection';
 
-function Footer() {
+function Footer({primaryColor}) {
     return (
         <>
-            <AnimatedBg />
+            <AnimatedBg selectedColor={primaryColor} />
             <div className="bg-primary -mt-1 w-full ">
                 <div className="mx-auto min-w-full max-w-screen-xl p-6 py-6 lg:py-8">
                     <div className="lg:flex items-center justify-center">
