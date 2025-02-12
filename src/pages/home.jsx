@@ -25,7 +25,7 @@ function Home({ primaryColor }) {
 
   return (
     <>
-      <div className='image-container grid h-screen'>
+      <div className='image-container grid lg:h-screen'>
         <div className="grid text-center justify-center items-center p-4 sm:gap-y-8">
           <h1 className="sm:text-6xl text-4xl text-center text-tertiary whitespace-normal break-words animate-ascend">
             Hi, I am a <span className="font-bold text-primary">Systems Engineering</span> student
