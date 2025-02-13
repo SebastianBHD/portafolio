@@ -1,13 +1,16 @@
 import React from 'react';
 
-const AnimatedSVG = ({ selectedColor = "#9f86c0" }) => {
+const AnimatedSVG = ({ selectedColor = "#9f86c0", bool = false }) => {
+
+  const claseDinamica = `transition duration-300 ease-in-out delay-100 ${bool ? 'rotate-180 -mt-1' : ''}`;
+
   return (
     <svg
       width="100%"
       height="100%"
       viewBox="0 0 1440 390"
       xmlns="http://www.w3.org/2000/svg"
-      className="transition duration-300 ease-in-out delay-100"
+      className={claseDinamica}
     >
       <style>
         {`

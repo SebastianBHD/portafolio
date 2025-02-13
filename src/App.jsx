@@ -26,6 +26,12 @@ function App() {
       '#4caf50': '/images/fondocambio-Photoroom-green.png',
     };
 
+    const colorMailMap = {
+      '#9f86c0': '/svgs/mail-violet.svg',
+      '#ff8f33': '/svgs/mail-orange.svg',
+      '#4caf50': '/svgs/mail-green.svg',
+    };
+
     const updateSvgBackground = () => {
       const primaryColorRgb = hexToRgb(primaryColor);
       const svgBackground = `
@@ -52,8 +58,8 @@ function App() {
           <div>
             <Routes>
               <Route path="/portafolio" element={<Home primaryColor={primaryColor} />} />
-              <Route path="/aboutMe" element={<AboutMe />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/aboutMe" element={<AboutMe color={primaryColor}/>} />
+              <Route path="/contact" element={<Contact primaryColor={primaryColor}/>} />
               <Route path="/myProjects" element={<MyProjects />} />
               <Route path="*" element={<Navigate to="/portafolio" replace />} />
             </Routes>

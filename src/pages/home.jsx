@@ -2,7 +2,7 @@ import InfoP from '../components/infoP';
 import MyProjects from '../components/myProjects';
 import '../App.css';
 
-function Home({ primaryColor }) {
+function Home({ primaryColor = '#9f86c0' }) {
   const title = "Who I Am ?";
   const desc = (
     <>
@@ -20,8 +20,7 @@ function Home({ primaryColor }) {
     '#4caf50': '/images/fondocambio-Photoroom-green.png',
   };
 
-  // Obtener la ruta de la imagen según el color seleccionado
-  const imageSrc = colorToImageMap[primaryColor] || '/images/fondocambio-Photoroom-violet.png'; // Valor por defecto
+  const imageSrc = colorToImageMap[primaryColor] || '/images/fondocambio-Photoroom-violet.png'; 
 
   return (
     <>
@@ -39,7 +38,7 @@ function Home({ primaryColor }) {
         </div>
       </div>
       <div className='relative z-20'>
-        <InfoP titulo={title} descripcion={desc} bool={true} />
+        <InfoP titulo={title} descripcion={desc} bool={true} color={primaryColor}/>
         <MyProjects />
       </div>
     </>

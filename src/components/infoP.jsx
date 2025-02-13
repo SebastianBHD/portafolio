@@ -1,12 +1,13 @@
 import { Button } from './ui/button'
 import { NavLink } from 'react-router-dom';
+import AnimatedBg from './common/animatedBg'
 
 
-function InfoP({ titulo, descripcion, bool }) {
+function InfoP({ titulo, descripcion, bool, color }) {
 
     return (
         <>
-            <div className="grid lg:p-10 min-w-full bg-primary p-5 -mt-5">
+            <div className="grid lg:p-10 pb-0 lg:pb-0 min-w-full bg-primary p-5 -mt-5">
                 <div>
                     <div className="flex items-center justify-center">
                         <div className="flex-grow border-t border-tertiary"></div>
@@ -16,15 +17,21 @@ function InfoP({ titulo, descripcion, bool }) {
                         <div className="flex-grow border-t border-tertiary"></div>
                     </div>
                 </div>
-                <div className="relative p-5 lg:p-20 flex flex-col xl:flex-row justify-center lg:justify-start items-center animate-ascend">
-                    <div className="xl:flex shadow-xl border rounded-md text-tertiary bg-quinary lg:p-10 p-5 lg:text-4xl md:text-2xl font-poppins font-light mt-4 md:mt-0 md:ml-4">
-                        <div className="flex justify-center items-center pb-8">
-                            <img className="relative object-cover rounded-lg shadow-xl lg:min-w-[350px] lg:min-h-[500px] w-[200px] h-[250px]" src="/images/yo.jpg" alt="Developer" />
-                        </div>
+                <div className="relative p-5 lg:p-20 pb-0 lg:pb-0 flex flex-col xl:flex-row justify-center lg:justify-start items-center animate-ascend">
+                    <div className="xl:flex text-tertiary bg-quinary lg:p-10 p-5 lg:text-4xl md:text-2xl font-poppins font-light mt-4 md:mt-0 md:ml-4">
+                        {!bool && (
+                            <div className="flex justify-center items-center pb-8">
+                                <img
+                                    className="relative object-cover rounded-lg shadow-xl lg:min-w-[350px] lg:min-h-[500px] w-[200px] h-[250px]"
+                                    src="/images/yo.jpg"
+                                    alt="Developer"
+                                />
+                            </div>
+                        )}
                         <div className='grid lg:p-12 gap-10'>
                             <p className='font-light text-tertiary text-justify xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-sm'>
                                 {descripcion}
-                            </p> 
+                            </p>
                             {bool ? (
                                 <NavLink to="/aboutMe">
                                     <div className='sm:flex items-center lg:justify-start justify-center'>
@@ -45,6 +52,7 @@ function InfoP({ titulo, descripcion, bool }) {
                     </div>
                 </div>
             </div>
+            <AnimatedBg selectedColor={color} bool={true}/>
         </>
     );
 }
