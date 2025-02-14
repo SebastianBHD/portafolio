@@ -7,10 +7,12 @@ import AboutMe from './pages/aboutMe.jsx';
 import Contact from './pages/contact.jsx';
 import Footer from './components/common/footer.jsx';
 import MyProjects from './pages/myProjects.jsx';
+import LoadingScreen from './components/common/loadingScreen.jsx';
 
 function App() {
   const location = useLocation();
   const [primaryColor, setPrimaryColor] = useState(localStorage.getItem('primaryColor') || '#9f86c0');
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const hexToRgb = (hex) => {
@@ -42,6 +44,12 @@ function App() {
     document.documentElement.style.setProperty('--primary-color', primaryColor);
     document.documentElement.style.setProperty('--primary-color-rgb', hexToRgb(primaryColor));
     updateSvgBackground();
+
+    const timer = setTimeout(() => {
+      setIsLoading(false); 
+    }, 2000);
+
+    return () => clearTimeout(timer);
   }, [primaryColor]);
 
   const changeColor = (color) => {
@@ -52,6 +60,7 @@ function App() {
 
   return (
     <>
+      {isLoading && <LoadingScreen />}
       <div className="app-container">
         <div className="app-content items-center justify-center w-full">
           <Header changeColor={changeColor} />
