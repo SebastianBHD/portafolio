@@ -40,7 +40,7 @@ function MoreInfo() {
                         <div className="col-span-1 lg:flex-row xl:col-span-3 md:p-8 text-start border-t-2 align-middle justify-center text-tertiary">
                             <h1 className="md:text-5xl font-poppins text-3xl pb-4 pt-4 text-primary">Skills</h1>
                             <ul className="list-disc ml-5 space-y-5">
-                                <li className="md:text-3xl text-xl"><span className="font-semibold">Frontend:</span> React, Astro, Tailwind CSS, CSS, HTML, JavaScript</li>
+                                <li className="md:text-3xl text-xl"><span className="font-semibold">Frontend:</span> React, Tailwind CSS, CSS, HTML, JavaScript</li>
                                 <li className="md:text-3xl text-xl"><span className="font-semibold">Backend:</span> Java, Node JS, C++, Express JS</li>
                                 <li className="md:text-3xl text-xl"><span className="font-semibold">Data Science:</span> PostgreSQL, MySQL</li>
                                 <li className="md:text-3xl text-xl"><span className="font-semibold">Other:</span> GitHub, LaTeX, Figma</li>

@@ -1,4 +1,3 @@
-// components/common/LoadingScreen.jsx
 import React from 'react';
 
 function LoadingScreen() {
