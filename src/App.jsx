@@ -47,7 +47,7 @@ function App() {
 
     const timer = setTimeout(() => {
       setIsLoading(false); 
-    }, 2000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, [primaryColor]);
