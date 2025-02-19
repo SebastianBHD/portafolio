@@ -6,6 +6,7 @@ function MyProjects() {
 
     const desc1 = "A web page where you can consult any movie or TV show data, with an AI Chatbot that helps you choose the best movie that fits you by considering your favorite actors or genres.";
     const desc2 = "A responsive web page where you can see the menu of a coffee shop, with some products and prices with a contact form to make a reservation. It is static only for practice purposes.";
+    const desc3 = "This app was built for GoGrow during a university asignment and It was made with a team of 13 people. Oneplify is a responsive platform that manages work leaves, vacations, payments and personal information."
     return (
         <>
             <div className='flex-col p-12 lg:p-16 justify-between gap-10'>
@@ -24,7 +25,7 @@ function MyProjects() {
                 <div className="grid lg:flex lg:flex-row gap-10 gap-y-24 md:p-20 p-10 justify-center items-center text-center">
                         <ProjectCard img="/images/QuePinta.png" desc={desc1} link="http://webir-peliculas.vercel.app" projectTitle='QuePinta'/>
                         <ProjectCard img="/images/CoffeePage.png" desc={desc2} link="https://sebastianbhd.github.io/coffeepage/" projectTitle='CoffeePage'/>
-                        <ProjectCard/>
+                        <ProjectCard img="/images/Oneplify.png" desc={desc3} link="https://www.figma.com/design/prOqFNUm9Av07qXTbhfmZf/PIS---Grupo-10---2024---%40shadcn%2Fui?node-id=123-1471&t=Yp2tRWzk0fmeoabA-1" projectTitle='Oneplify'/>
                 </div>
                 <div className='flex justify-center'>
                     <NavLink to='/myProjects' className='text-primary hover:text-primary underline'>
