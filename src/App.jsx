@@ -3,16 +3,21 @@ import './App.css';
 import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import Header from './components/common/header.jsx';
 import Home from './pages/home.jsx';
-import AboutMe from './pages/aboutMe.jsx';
+import AboutMe from './pages/about-me.jsx';
 import Contact from './pages/contact.jsx';
 import Footer from './components/common/footer.jsx';
-import MyProjects from './pages/myProjects.jsx';
-import LoadingScreen from './components/common/loadingScreen.jsx';
+import MyProjects from './pages/my-projects.jsx';
+import LoadingScreen from './components/common/loading-screen.jsx';
+import AnimatedBackground from './components/common/primary-animated-bg.jsx';
 
 function App() {
   const location = useLocation();
   const [primaryColor, setPrimaryColor] = useState(localStorage.getItem('primaryColor') || '#9f86c0');
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   useEffect(() => {
     const hexToRgb = (hex) => {
@@ -62,14 +67,15 @@ function App() {
     <>
       {isLoading && <LoadingScreen />}
       <div className="app-container">
-        <div className="app-content items-center justify-center w-full">
+        <AnimatedBackground />
+        <div className="app-content items-center justify-center w-full relative z-10">
           <Header changeColor={changeColor} />
           <div>
             <Routes>
               <Route path="/portafolio" element={<Home primaryColor={primaryColor} />} />
-              <Route path="/aboutMe" element={<AboutMe color={primaryColor}/>} />
+              <Route path="/about-me" element={<AboutMe color={primaryColor}/>} />
               <Route path="/contact" element={<Contact primaryColor={primaryColor}/>} />
-              <Route path="/myProjects" element={<MyProjects />} />
+              <Route path="/my-projects" element={<MyProjects />} />
               <Route path="*" element={<Navigate to="/portafolio" replace />} />
             </Routes>
           </div>

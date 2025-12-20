@@ -5,14 +5,23 @@
 .app-container {
   min-height: 100vh;
   position: relative;
-  background-image: url('/images/fondo2.webp');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: #0a0a0a;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
+
+@property --a {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes borderSpin {
+  to { --a: 1turn; }
+}
+
 
 .loader {
   width: 64px;
@@ -48,16 +57,24 @@
 }
 
 
-.app-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(5px);
-  z-index: 1;
+/* Animación para partículas flotantes */
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.2;
+  }
+  25% {
+    transform: translate(20px, -20px) scale(1.1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-15px, 15px) scale(0.9);
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(10px, 10px) scale(1.05);
+    opacity: 0.3;
+  }
 }
 
 .app-content {
@@ -99,31 +116,210 @@ img, .app-content, .profile-image {
   animation: ascend 1s ease-out forwards;
 }
 
-body {
-  --sb-track-color: #7b8286;
-  --sb-thumb-color: #14213d;
-  --sb-size: 14px;
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #666666 #1a1a1a;
+}
 
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #666666;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #888888;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #666666 #1a1a1a;
 }
 
 body::-webkit-scrollbar {
-  width: var(--sb-size)
+  width: 8px;
+  height: 8px;
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--sb-track-color);
-  border-radius: 2px;
+  background: #1a1a1a;
+  border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--sb-thumb-color);
-  border-radius: 2px;
-
+  background: #666666;
+  border-radius: 10px;
+  transition: background 0.2s ease;
 }
 
-@supports not selector(::-webkit-scrollbar) {
-  body {
-    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+body::-webkit-scrollbar-thumb:hover {
+  background: #888888;
+}
+
+/* Timeline styles - Modernizado */
+.vertical-timeline-element-date {
+  color: #EFF6E0 !important;
+  font-weight: 500;
+  font-size: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border-radius: 8px !important;
+}
+
+.vertical-timeline-element-content:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px rgba(239, 246, 224, 0.2), 
+              inset 0 2px 0 rgba(0, 0, 0, 0.08), 
+              0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s ease !important;
+}
+
+.vertical-timeline-element-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 6px rgba(239, 246, 224, 0.3), 
+              inset 0 2px 0 rgba(0, 0, 0, 0.08), 
+              0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.vertical-timeline-element-title {
+  transition: color 0.2s ease;
+}
+
+.vertical-timeline-element-subtitle {
+  transition: opacity 0.2s ease;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .vertical-timeline-element-content {
+    padding: 1rem !important;
   }
+  
+  .vertical-timeline-element-date {
+    font-size: 0.875rem !important;
+  }
+}
+
+/* Animation for timeline elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vertical-timeline-element {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Animaciones para glows del fondo */
+@keyframes glowMove1 {
+  0%, 100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(100px, -80px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(-60px, 120px);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(80px, 60px);
+    opacity: 0.9;
+  }
+}
+
+@keyframes glowMove2 {
+  0%, 100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+    opacity: 0.7;
+  }
+  33% {
+    transform: translate(-50%, -50%) translate(-120px, 100px);
+    opacity: 0.9;
+  }
+  66% {
+    transform: translate(-50%, -50%) translate(90px, -110px);
+    opacity: 0.6;
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 1;
+  }
+}
+
+@keyframes glowMove3 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(150px) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg) translateX(150px) rotate(-180deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(150px) rotate(-360deg);
+    opacity: 0.7;
+  }
+}
+
+/* Flip Card styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Flip Card indicator animation */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
 }
 

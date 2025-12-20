@@ -1,0 +1,162 @@
+{
+  "header": {
+    "home": "Início",
+    "aboutMe": "Sobre Mim",
+    "myProjects": "Meus Projetos",
+    "contact": "Contato"
+  },
+  "home": {
+    "title": "Quem Sou Eu?",
+    "greeting": "Olá, sou um",
+    "greetingDegree": "Engenharia de Sistemas",
+    "greetingStudent": "estudante",
+    "subtitle": "Gosto de programar, aprender coisas novas e trabalhar em equipe",
+    "name": "Sebastian Britos",
+    "description": "Meu nome é {name}, tenho 22 anos e sou estudante de {degree} na Universidade da República. Tenho mais de {credits} aprovados e mais de {subjects} cursadas. Trabalhei em múltiplos projetos em grupo onde adquiri diversos conhecimentos e aprendi a trabalhar em equipe.",
+    "degree": "Engenharia de Sistemas",
+    "credits": "300 créditos",
+    "subjects": "30 matérias"
+  },
+  "aboutMe": {
+    "title": "Sobre Mim",
+    "description": "Meu nome é {name}, tenho 22 anos. Sou um estudante avançado uruguaio de {degree} na Universidade da República. Tenho sido estudante por 5 anos e tenho mais de {credits} e mais de {subjects} aprovadas. Atualmente trabalho como Desenvolvedor Full Stack na Sloane Infotech, uma posição remota para os Estados Unidos.",
+    "journeyTitle": "Minha Jornada"
+  },
+  "timeline": {
+    "birth": {
+      "title": "Nascimento",
+      "subtitle": "Montevidéu, Uruguai",
+      "description": "Nasci em Montevidéu, Uruguai"
+    },
+    "schoolStarted": {
+      "title": "Início da Escola",
+      "subtitle": "San Cayetano",
+      "description": "Comecei minha educação primária"
+    },
+    "schoolCompleted": {
+      "title": "Escola Concluída",
+      "subtitle": "San Cayetano",
+      "description": "Terminei minha educação primária"
+    },
+    "highSchoolStarted": {
+      "title": "Início do Ensino Médio",
+      "subtitle": "San Cayetano",
+      "description": "Comecei minha educação secundária"
+    },
+    "highSchoolCompleted": {
+      "title": "Ensino Médio Concluído",
+      "subtitle": "Santa Luisa - Orientação Engenharia",
+      "description": "Completei minha educação secundária com orientação em engenharia"
+    },
+    "universityStarted": {
+      "title": "Início da Universidade",
+      "subtitle": "Engenharia de Sistemas",
+      "description": "Comecei meus estudos na Universidade da República"
+    },
+    "workStarted": {
+      "title": "Desenvolvedor Full Stack",
+      "subtitle": "Sloane Infotech - Remoto (EUA)",
+      "description": "Comecei a trabalhar como Desenvolvedor Full Stack em uma posição remota para os Estados Unidos"
+    }
+  },
+  "flipCard": {
+    "workExperience": {
+      "title": "Experiência Profissional",
+      "content": "Atualmente trabalho como Desenvolvedor Full Stack na Sloane Infotech desde fevereiro de 2024. Posição remota para os Estados Unidos."
+    },
+    "engineeringDegree": {
+      "title": "Título de Engenharia",
+      "content": "Estudante de Engenharia de Sistemas na Universidade da República por 5 anos. Mais de 30 matérias aprovadas."
+    },
+    "english": {
+      "title": "Inglês",
+      "content": "Fluente em inglês. Capaz de trabalhar em ambientes de língua inglesa e se comunicar efetivamente em contextos profissionais."
+    },
+    "hoverOrClick": "Passe o mouse ou clique"
+  },
+  "myProjects": {
+    "title": "Meus Projetos",
+    "subtitle": "Estes são alguns dos projetos em que trabalhei",
+    "viewAll": "Ver Todos os Projetos",
+    "viewProject": "Ver Projeto",
+    "projects": {
+      "scoutUsMarketing": {
+        "title": "ScoutUs College Marketing Site",
+        "description": "O site de marketing do ScoutUs College mostra e explica as seções e características principais da plataforma. Apresenta ferramentas de recrutamento, busca de universidades, oportunidades NIL, relatórios de desempenho com IA, opções de financiamento e planos de preços, guiando os usuários a entender o produto e se inscrever."
+      },
+      "scoutUsApp": {
+        "title": "ScoutUs College App",
+        "description": "ScoutUs College é uma plataforma de recrutamento que ajuda estudantes-atletas aspirantes a se conectar com treinadores universitários, mostrar seus talentos e encontrar oportunidades de bolsas. Também apoia a exploração de financiamento e acordos NIL para impulsionar a exposição e carreiras atléticas."
+      },
+      "oneplify": {
+        "title": "Oneplify",
+        "description": "Este aplicativo foi construído para GoGrow durante uma tarefa universitária e foi feito com uma equipe de 13 pessoas. Oneplify é uma plataforma completa de RH e gestão de força de trabalho que automatiza folgas, operações de pessoal, rastreamento de despesas e folha de pagamento."
+      },
+      "coffeePage": {
+        "title": "CoffeePage",
+        "description": "Uma página web responsiva onde você pode ver o cardápio de uma cafeteria, com alguns produtos e preços com um formulário de contato para fazer uma reserva. É estática apenas para fins de prática."
+      },
+      "quePinta": {
+        "title": "QuePinta",
+        "description": "Uma página web onde você pode consultar dados de qualquer filme ou série de TV, com um Chatbot de IA que ajuda você a escolher o melhor filme que se adapta a você considerando seus atores ou gêneros favoritos."
+      }
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "contactLabel": "Contato",
+    "emailPlaceholder": "Seu Email",
+    "messagePlaceholder": "Texto para Enviar",
+    "send": "Enviar",
+    "emailSent": "Email enviado com sucesso!",
+    "emailError": "Ocorreu um erro. Por favor tente novamente."
+  },
+  "moreInfo": {
+    "relevantSubjects": "Matérias Relevantes",
+    "currentSubjects": "Matérias Atuais",
+    "hobbies": "Passatempos",
+    "skills": "Habilidades",
+    "subjects": {
+      "programming": "Programação 1, 2, 3, 4",
+      "database": "Fundamentos de Bancos de Dados",
+      "softwareEngineering": "Projeto de Engenharia de Software",
+      "dataIntegration": "Integração de Dados",
+      "machineLearning": "Aprendizado de Máquina",
+      "logicProgramming": "Programação Lógica",
+      "businessSystems": "Workshop de Sistemas de Negócios",
+      "operativeSystems": "Sistemas Operacionais",
+      "computerNetworks": "Redes de Computadores"
+    },
+    "hobbiesList": {
+      "designWebsites": "Projetar sites web",
+      "playFootball": "Jogar futebol",
+      "goToGym": "Ir à academia",
+      "cook": "Cozinhar"
+    },
+    "skillsList": {
+      "frontend": "Frontend:",
+      "backend": "Backend:",
+      "dataScience": "Ciência de Dados:",
+      "other": "Outros:",
+      "frontendTech": "React, Tailwind CSS, CSS, HTML, JavaScript, TypeScript, Next JS",
+      "backendTech": "Java, Node JS, C++, Express JS, Nest JS, Next JS",
+      "dataScienceTech": "PostgreSQL, MySQL",
+      "otherTech": "GitHub, GitLab, LaTeX, Figma"
+    }
+  },
+  "footer": {
+    "resources": "Recursos",
+    "followMe": "Me Siga"
+  },
+  "common": {
+    "viewMore": "Ver Mais",
+    "curriculumVitae": "Currículo",
+    "scholarship": "Escolaridade"
+  },
+  "languages": {
+    "es": "Español",
+    "en": "English",
+    "pt": "Português"
+  }
+}
+

@@ -1,0 +1,162 @@
+{
+  "header": {
+    "home": "Home",
+    "aboutMe": "About Me",
+    "myProjects": "My Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Who I Am ?",
+    "greeting": "Hi, I am a",
+    "greetingDegree": "Systems Engineering",
+    "greetingStudent": "student",
+    "subtitle": "I like programming, learning new things and working in team",
+    "name": "Sebastian Britos",
+    "description": "My name is {name}, I'm 22 years old and I'm a student of {degree} at the University of the Republic. I have more than {credits} approved and more than {subjects} taken. I have worked on multiple group projects where I have acquired diverse knowledge and learned how to work as a team.",
+    "degree": "Systems Engineering",
+    "credits": "300 credits",
+    "subjects": "30 subjects"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "description": "My name is {name}, I'm 22 years old. I'm an advanced Uruguayan student of {degree} at the University of the Republic. I have been a student for 5 years and I have more than {credits} and more than {subjects} approved. I'm currently working as a Full Stack Developer at Sloane Infotech, a remote position for the United States.",
+    "journeyTitle": "My Journey"
+  },
+  "timeline": {
+    "birth": {
+      "title": "Birth",
+      "subtitle": "Montevideo, Uruguay",
+      "description": "I was born in Montevideo, Uruguay"
+    },
+    "schoolStarted": {
+      "title": "School Started",
+      "subtitle": "San Cayetano",
+      "description": "I began my primary education"
+    },
+    "schoolCompleted": {
+      "title": "School Completed",
+      "subtitle": "San Cayetano",
+      "description": "I finished my primary education"
+    },
+    "highSchoolStarted": {
+      "title": "High School Started",
+      "subtitle": "San Cayetano",
+      "description": "I began my secondary education"
+    },
+    "highSchoolCompleted": {
+      "title": "High School Completed",
+      "subtitle": "Santa Luisa - Engineering Orientation",
+      "description": "I completed my high school education with an engineering orientation"
+    },
+    "universityStarted": {
+      "title": "University Started",
+      "subtitle": "Systems Engineering",
+      "description": "I began my studies at the University of the Republic"
+    },
+    "workStarted": {
+      "title": "Full Stack Developer",
+      "subtitle": "Sloane Infotech - Remote (USA)",
+      "description": "I started working as a Full Stack Developer in a remote position for the United States"
+    }
+  },
+  "flipCard": {
+    "workExperience": {
+      "title": "Work Experience",
+      "content": "Currently working as Full Stack Developer at Sloane Infotech since February 2024. Remote position for the United States."
+    },
+    "engineeringDegree": {
+      "title": "Engineering Degree",
+      "content": "Systems Engineering student at University of the Republic for 5 years. More than 30 subjects approved."
+    },
+    "english": {
+      "title": "English",
+      "content": "Fluent in English. Capable of working in English-speaking environments and communicating effectively in professional settings."
+    },
+    "hoverOrClick": "Hover or click"
+  },
+  "myProjects": {
+    "title": "My Projects",
+    "subtitle": "These are some of the projects I have worked on",
+    "viewAll": "View All Projects",
+    "viewProject": "View Project",
+    "projects": {
+      "scoutUsMarketing": {
+        "title": "ScoutUs College Marketing Site",
+        "description": "ScoutUs College's marketing site showcases and explains the platform's core sections and features. It presents recruiting tools, college search, NIL opportunities, AI performance reports, funding options, and pricing plans, guiding users to understand the product and sign up."
+      },
+      "scoutUsApp": {
+        "title": "ScoutUs College App",
+        "description": "ScoutUs College is a recruiting platform that helps aspiring student-athletes connect with college coaches, showcase their talents, and find scholarship opportunities. It also supports exploring funding and NIL deals to boost exposure and athletic careers."
+      },
+      "oneplify": {
+        "title": "Oneplify",
+        "description": "This app was built for GoGrow during a university assignment and It was made with a team of 13 people. Oneplify is an all-in-one HR and workforce management platform that automates time-off, people operations, expense tracking, and payroll."
+      },
+      "coffeePage": {
+        "title": "CoffeePage",
+        "description": "A responsive web page where you can see the menu of a coffee shop, with some products and prices with a contact form to make a reservation. It is static only for practice purposes."
+      },
+      "quePinta": {
+        "title": "QuePinta",
+        "description": "A web page where you can consult any movie or TV show data, with an AI Chatbot that helps you choose the best movie that fits you by considering your favorite actors or genres."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "contactLabel": "Contact",
+    "emailPlaceholder": "Your Email",
+    "messagePlaceholder": "Text to Send",
+    "send": "Send",
+    "emailSent": "Email sent successfully!",
+    "emailError": "An error occurred. Please try again."
+  },
+  "moreInfo": {
+    "relevantSubjects": "Relevant Subjects",
+    "currentSubjects": "Current Subjects",
+    "hobbies": "Hobbies",
+    "skills": "Skills",
+    "subjects": {
+      "programming": "Programming 1, 2, 3, 4",
+      "database": "Database Fundamentals",
+      "softwareEngineering": "Software Engineering Project",
+      "dataIntegration": "Data Integration",
+      "machineLearning": "Machine Learning",
+      "logicProgramming": "Logic Programming",
+      "businessSystems": "Business Systems Workshop",
+      "operativeSystems": "Operative Systems",
+      "computerNetworks": "Computer Networks"
+    },
+    "hobbiesList": {
+      "designWebsites": "Design websites",
+      "playFootball": "Play football",
+      "goToGym": "Go to the gym",
+      "cook": "Cook"
+    },
+    "skillsList": {
+      "frontend": "Frontend:",
+      "backend": "Backend:",
+      "dataScience": "Data Science:",
+      "other": "Other:",
+      "frontendTech": "React, Tailwind CSS, CSS, HTML, JavaScript, TypeScript, Next JS",
+      "backendTech": "Java, Node JS, C++, Express JS, Nest JS, Next JS",
+      "dataScienceTech": "PostgreSQL, MySQL",
+      "otherTech": "GitHub, GitLab, LaTeX, Figma"
+    }
+  },
+  "footer": {
+    "resources": "Resources",
+    "followMe": "Follow Me"
+  },
+  "common": {
+    "viewMore": "View More",
+    "curriculumVitae": "Curriculum Vitae",
+    "scholarship": "Scolarship"
+  },
+  "languages": {
+    "es": "Español",
+    "en": "English",
+    "pt": "Português"
+  }
+}
+

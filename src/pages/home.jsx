@@ -1,15 +1,34 @@
-import InfoP from '../components/infoP';
-import MyProjects from '../components/myProjects';
+import InfoP from '../components/info-personal';
+import MyProjects from '../components/my-rojects';
 import '../App.css';
+import { useTranslation } from '../hooks/useTranslation';
 
 function Home({ primaryColor = '#9f86c0' }) {
-  const title = "Who I Am ?";
+  const { t } = useTranslation();
+  const title = t('home.title');
+  const descText = t('home.description');
+  const name = t('home.name');
+  const degree = t('home.degree');
+  const credits = t('home.credits');
+  const subjects = t('home.subjects');
+  
   const desc = (
     <>
-      My name is <span className="text-primary font-normal">Sebastian Britos</span>. I'm 21 years old and I'm a student of
-      <span className="text-primary font-normal"> Systems Engineering</span> at the University of the Republic. I have more than
-      <span className=" text-primary font-normal"> 300 credits</span> approved and almost
-      <span className="text-primary font-normal"> 30 subjects</span> taken. I have worked on multiple group projects where I have acquired diverse knowledge and learned how to work as a team.
+      {descText.split(/(\{name\}|\{degree\}|\{credits\}|\{subjects\})/).map((part, index) => {
+        if (part === '{name}') {
+          return <span key={index} className="text-primary font-normal cursor-default">{name}</span>;
+        }
+        if (part === '{degree}') {
+          return <span key={index} className="text-primary font-normal cursor-default">{degree}</span>;
+        }
+        if (part === '{credits}') {
+          return <span key={index} className="text-primary font-normal cursor-default">{credits}</span>;
+        }
+        if (part === '{subjects}') {
+          return <span key={index} className="text-primary font-normal cursor-default">{subjects}</span>;
+        }
+        return part;
+      })}
     </>
   );
 
@@ -26,11 +45,11 @@ function Home({ primaryColor = '#9f86c0' }) {
     <>
       <div className='image-container grid lg:h-screen'>
         <div className="grid text-center justify-center items-center p-4 sm:gap-y-8">
-          <h1 className="sm:text-6xl text-4xl text-center text-tertiary whitespace-normal break-words animate-ascend">
-            Hi, I am a <span className="font-bold text-primary">Systems Engineering</span> student
+          <h1 className="sm:text-6xl text-4xl text-center text-tertiary whitespace-normal break-words animate-ascend cursor-default">
+            {t('home.greeting')} <span className="font-bold text-primary cursor-default">{t('home.greetingDegree')}</span> {t('home.greetingStudent')}
           </h1>
-          <p className="sm:text-3xl text-2xl font-light text-center text-tertiary whitespace-normal break-words animate-ascend">
-            I like programming, learning new things and working in team
+          <p className="sm:text-3xl text-2xl font-light text-center text-tertiary whitespace-normal break-words animate-ascend cursor-default">
+            {t('home.subtitle')}
           </p>
         </div>
         <div className="flex justify-center items-end">
